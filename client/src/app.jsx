@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import {
   ResponsiveContainer,
@@ -11,7 +10,7 @@ import {
 } from "recharts";
 import "./index.css";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "https://sales-forecast-cv67.onrender.com";
 
 function App() {
   const [activePage, setActivePage] = useState("dashboard");
